@@ -36,7 +36,7 @@ public class YoutubeTeste {
         PointerInput input = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
         Sequence tap = new Sequence(input, 1);
         tap.addAction(input.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(), 553, 1257));
-        tap.addAction(input.createPointerDown(0)); // Correção aqui
+        tap.addAction(input.createPointerDown(0)); 
         tap.addAction(input.createPointerUp(0));
         driver.perform(List.of(tap));
 
